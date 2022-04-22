@@ -1,0 +1,124 @@
+:root {
+  /* BACKGROUNDS*/
+  --theme1-main-bg: #3a4764;
+  --theme1-toggle-keypad-bg: #232c43;
+  --theme1-screen-bg: #182034;
+  --theme2-main-bg: #e6e6e6;
+  --theme2-toggle-keypad-bg: #d1cccc;
+  --theme2-screen-bg: #ededed;
+  --theme3-main-bg: #160628;
+  --theme3-toggle-keypad-bg: #1d0934;
+  --theme3-screen-bg: #1d0934;
+  /* KEYS */
+  --theme1-key-del-reset-bg: #637097;
+  --theme1-key-del-reset-hover: #737ea1;
+  --theme1-key-del-reset-shadow: #404e72;
+  --theme1-key-equal-toggle-bg: #d03f2f;
+  --theme1-key-equal-toggle-hover: #d55244;
+  --theme1-key-equal-shadow: #93261a;
+  --theme1-key-numpad-bg: #eae3dc;
+  --theme1-key-numpad-hover: #f5f1ee;
+  --theme1-key-numpad-shadow: #b4a597;
+
+  --theme2-key-del-reset-bg: #377f86;
+  --theme2-key-del-reset-hover: #4b8c92;
+  --theme2-key-del-reset-shadow: #1b5f65;
+  --theme2-key-equal-toggle-bg: #ca5502;
+  --theme2-key-equal-toggle-hover: #cf661b;
+  --theme2-key-equal-shadow: #893901;
+  --theme2-key-numpad-bg: #e5e4e1;
+  --theme2-key-numpad-hover: #efefed;
+  --theme2-key-numpad-shadow: #a69d91;
+
+  --theme3-key-del-reset-bg: #58077d;
+  --theme3-key-del-reset-hover: #69208a;
+  --theme3-key-del-reset-shadow: #bc15f4;
+  --theme3-key-equal-toggle-bg: #00e0d1;
+  --theme3-key-equal-toggle-hover: #33e6da;
+  --theme3-key-equal-shadow: #6cf9f2;
+  --theme3-key-numpad-bg: #341c4f;
+  --theme3-key-numpad-hover: #483361;
+  --theme3-key-numpad-shadow: #871c9c;
+  /*
+    /* TEXT */
+
+  --theme1-header-display-text: #fff;
+  --theme1-numpad-text: #444b5a;
+  --theme1-del-reset-text: #fff;
+  --theme1-equal-text: #fff;
+
+  --theme2-header-display-text: #35352c;
+  --theme2-numpad-text: #35352c;
+  --theme2-del-reset-text: #fff;
+  --theme2-equal-text: #fff;
+
+  --theme3-header-display-text: #ffe53d;
+  --theme3-numpad-text: #ffe53d;
+  --theme3-del-reset-text: #fff;
+  --theme3-equal-text: #1b2428;
+}
+
+.classic-theme {
+  --main-bg: var(--theme1-main-bg);
+  --toggle-keypad-bg: var(--theme1-toggle-keypad-bg);
+  --screen-bg: var(--theme1-screen-bg);
+
+  --key-del-reset-bg: var(--theme1-key-del-reset-bg);
+  --key-del-reset-hover: var(--theme1-key-del-reset-hover);
+  --key-del-reset-shadow: var(--theme1-key-del-reset-shadow);
+  --key-equal-toggle-bg: var(--theme1-key-equal-toggle-bg);
+  --key-equal-toggle-hover: var(--theme1-key-equal-toggle-hover);
+  --key-equal-shadow: var(--theme1-key-equal-shadow);
+  --key-numpad-bg: var(--theme1-key-numpad-bg);
+  --key-numpad-hover: var(--theme1-key-numpad-hover);
+  --key-numpad-shadow: var(--theme1-key-numpad-shadow);
+
+  --header-display-text: var(--theme1-header-display-text);
+  --numpad-text: var(--theme1-numpad-text);
+  --del-reset-text: var(--theme1-del-reset-text);
+  --equal-text: var(--theme1-equal-text);
+}
+
+.white-theme {
+  --main-bg: var(--theme2-main-bg);
+  --toggle-keypad-bg: var(--theme2-toggle-keypad-bg);
+  --screen-bg: var(--theme2-screen-bg);
+
+  --key-del-reset-bg: var(--theme2-key-del-reset-bg);
+  --key-del-reset-hover: var(--theme2-key-del-reset-hover);
+  --key-del-reset-shadow: var(--theme2-key-del-reset-shadow);
+  --key-equal-toggle-bg: var(--theme2-key-equal-toggle-bg);
+  --key-equal-toggle-hover: var(--theme2-key-equal-toggle-hover);
+  --key-equal-shadow: var(--theme2-key-equal-shadow);
+  --key-numpad-bg: var(--theme2-key-numpad-bg);
+  --key-numpad-hover: var(--theme2-key-numpad-hover);
+  --key-numpad-shadow: var(--theme2-key-numpad-shadow);
+
+  --header-display-text: var(--theme2-header-display-text);
+  --numpad-text: var(--theme2-numpad-text);
+  --del-reset-text: var(--theme2-del-reset-text);
+  --equal-text: var(--theme2-equal-text);
+}
+
+.violet-theme {
+  --main-bg: var(--theme3-main-bg);
+  --toggle-keypad-bg: var(--theme3-toggle-keypad-bg);
+  --screen-bg: var(--theme3-screen-bg);
+
+  --key-del-reset-bg: var(--theme3-key-del-reset-bg);
+  --key-del-reset-hover: var(--theme3-key-del-reset-hover);
+  --key-del-reset-shadow: var(--theme3-key-del-reset-shadow);
+
+  --key-equal-toggle-bg: var(--theme3-key-equal-toggle-bg);
+  --key-equal-toggle-hover: var(--theme3-key-equal-toggle-hover);
+  --key-equal-shadow: var(--theme3-key-equal-shadow);
+
+  --key-numpad-bg: var(--theme3-key-numpad-bg);
+  --key-numpad-hover: var(--theme3-key-numpad-hover);
+  --key-numpad-shadow: var(--theme3-key-numpad-shadow);
+
+  --header-display-text: var(--theme3-header-display-text);
+  --numpad-text: var(--theme3-numpad-text);
+  --del-reset-text: var(--theme3-del-reset-text);
+  --equal-text: var(--theme3-equal-text);
+}

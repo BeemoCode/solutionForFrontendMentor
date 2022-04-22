@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="themes.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body class="classic-theme">
+    <div class="calculator-grid">
+      <div class="header">
+        <h1 class="header-title">calc</h1>
+        <div class="theme-selector-grid">
+          <h2>Theme</h2>
+
+          <div class="theme-selector">
+            <div class="item-text">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="switch">
+              <input
+                class="theme-input"
+                type="radio"
+                name="theme"
+                id="classic-theme"
+                checked
+              />
+              <label for="classic-theme"></label>
+              <input
+                class="theme-input"
+                type="radio"
+                name="theme"
+                id="white-theme"
+              />
+              <label for="white-theme"></label>
+              <input
+                class="theme-input"
+                type="radio"
+                name="theme"
+                id="violet-theme"
+              />
+              <label for="violet-theme"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="display">
+        <div class="panel">
+          <div class="error-message"></div>
+          <div class="first-operand"></div>
+          <span class="sign-text"></span>
+          <div class="second-operand"></div>
+        </div>
+      </div>
+
+      <div class="keypad">
+        <div class="grid-buttons-4-5">
+          <button class="btn btn--num btn--key">7</button>
+          <button class="btn btn--num btn--key">8</button>
+          <button class="btn btn--num btn--key">9</button>
+          <button class="btn btn--del">del</button>
+          <button class="btn btn--num btn--key">4</button>
+          <button class="btn btn--num btn--key">5</button>
+          <button class="btn btn--num btn--key">6</button>
+          <button id="plus" class="btn btn--key btn--action">+</button>
+          <button class="btn btn--num btn--key">1</button>
+          <button class="btn btn--num btn--key">2</button>
+          <button class="btn btn--num btn--key">3</button>
+          <button id="minus" class="btn btn--key btn--action">-</button>
+          <button id="dot" class="btn btn--key">.</button>
+          <button class="btn btn--num btn--key">0</button>
+          <button id="division" class="btn btn--key btn--action">/</button>
+          <button id="multiply" class="btn btn--key btn--action">x</button>
+          <button class="btn btn--reset">reset</button>
+          <button class="btn btn--equal">=</button>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Alexey Faleev</a>.
+      </div>
+    </div>
+  </body>
+</html>
