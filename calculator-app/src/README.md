@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/calculator-app/src)
-- Live Site URL: [](https://calculator-frontendmentor-faleev.netlify.app/)
+- Solution URL: [Github](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/calculator-app/src)
+- Live Site URL: [Netlify](https://calculator-frontendmentor-faleev.netlify.app/)
 
 ## My process
 
