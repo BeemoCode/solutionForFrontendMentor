@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+.container {
+  width: 60rem;
+  padding: 0 2.4rem 0 2.4rem;
+  align-self: center;
+}
+.advice-box {
+  align-self: center;
+  background-color: #323a49;
+  width: 100%;
+  padding: 4.8rem 4.8rem 8rem 4.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  border-radius: 1.4rem;
+  position: relative;
+}
+.advice-box h1 {
+  color: #52ffa8;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+.advice-box p {
+  color: #cee3e9;
+  width: 44.4rem;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.picture-divider {
+  width: 44.4rem;
+  height: 1.6rem;
+  background-image: url(images/pattern-divider-desktop.svg);
+}
+.advice-box button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+  background-color: #52ffa8;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: all 0.1s ease;
+}
+.advice-box button:hover {
+  box-shadow: 0 0 40px #4ae697;
+  background-color: #63ffb1;
+}
+.advice-box button:active {
+  box-shadow: 0 0 30px #4ae697;
+}
+.dice {
+  width: 24px;
+  height: 24px;
+}
+.attribution {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #cee3e9;
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.attribution a {
+  color: #63ffb1;
+  padding-left: 4px;
+}
+
+@media (max-width: 33em) {
+  .container {
+    width: 40rem;
+    padding: 0 2.4rem 0 2.4rem;
+  }
+
+  .advice-box {
+    padding: 4.8rem 2.4rem 6.4rem 2.4rem;
+    gap: 1.2rem;
+  }
+
+  .picture-divider {
+    width: 29.5rem;
+    height: 1.6rem;
+    background-image: url(images/pattern-divider-mobile.svg);
+  }
+
+  .advice-box p {
+    width: 29.5rem;
+    font-size: 2.4rem;
+  }
+
+  .advice-box button {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+  }
+}
