@@ -18,9 +18,9 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 Your users should be able to:
 
-View the optimal layout for the app depending on their device's screen size.
-See hover states for all interactive elements on the page.
-Generate a new piece of advice by clicking the dice icon.
+View the optimal layout for the app depending on their device's screen size. 
+See hover states for all interactive elements on the page. 
+Generate a new piece of advice by clicking the dice icon. 
 
 ### Screenshot
 
@@ -28,7 +28,7 @@ Generate a new piece of advice by clicking the dice icon.
 
 ### Links
 
-- Solution URL: [Github](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/advice-generator-app-main)
+- Solution URL: [Github](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/advice-generator-app-main/src)
 - Live Site URL: [Netlify](https://advice-frontendmentor-faleev.netlify.app/)
 
 ## My process
