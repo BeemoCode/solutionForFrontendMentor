@@ -26,11 +26,11 @@ Generate a new piece of advice by clicking the dice icon.
 
 ### Screenshot
 
-![](./advice-screen.png.jpg)
+![](./advice-screen.png)
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
+- Solution URL: [Github]()
 - Live Site URL: [Netlify](https://advice-frontendmentor-faleev.netlify.app/)
 
 ## My process
