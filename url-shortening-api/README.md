@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
+- Solution URL: [Github](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/url-shortening-api)
 - Live Site URL: [Netlify](https://shorten-url-frontendmentor-faleev.netlify.app/)
 
 ## My process
@@ -52,3 +52,4 @@ I want to improve my knowledge of CSS so that in the future the layout of such s
 ## Author
 
 - Frontend Mentor - [@BeemoCode](https://www.frontendmentor.io/profile/BeemoCode)
+- Github - [Alexey Faleev](https://github.com/BeemoCode)
