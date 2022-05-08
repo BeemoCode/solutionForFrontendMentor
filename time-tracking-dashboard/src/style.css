@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .container {
   display: flex;
@@ -24,7 +25,6 @@ body {
 }
 .grid-4-2 {
   display: grid;
-  padding: 8rem;
   grid-template-columns: repeat(4, 25.5rem);
   grid-template-rows: repeat(2, 24.4rem);
   gap: 3rem;
