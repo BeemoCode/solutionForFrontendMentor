@@ -1,7 +1,11 @@
 @media (max-width: 70em) {
+  body{
+    height: 100%;
+  }
+  
   .grid-4-2 {
     width: 100%;
-    padding: 8rem 1rem;
+    padding: 4rem 1rem;
     grid-template-columns: repeat(3, 25.5rem);
     grid-template-rows: repeat(3, 24.4rem);
   }
@@ -40,7 +44,7 @@
 @media (max-width: 54em) {
   .grid-4-2 {
     width: 100%;
-    padding: 8rem 1rem;
+    padding: 4rem 1rem;
     grid-template-columns: repeat(2, 25.5rem);
     grid-template-rows: repeat(4, 24.4rem);
   }
@@ -49,7 +53,7 @@
 @media (max-width: 35em) {
   .grid-4-2 {
     width: 100%;
-    padding: 8rem 1rem;
+    padding: 4rem 1rem;
     grid-template-columns: 32rem;
     grid-template-rows: min-content;
     row-gap: 7rem;
