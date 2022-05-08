@@ -128,12 +128,12 @@ const render = function (title, cur_time, prev_time, timeFrame) {
         <div class="img-box">
           <img class="img-${createTitle(
             title
-          )}" src="/images/icon-${createTitle(title)}.svg" alt="" />
+          )}" src="images/icon-${createTitle(title)}.svg" alt="" />
         </div>
     
         <div class="title">
           <p>${title}</p>
-          <img src="/images/icon-ellipsis.svg" alt="" />
+          <img src="images/icon-ellipsis.svg" alt="" />
         </div>
     
         <div class="time">
