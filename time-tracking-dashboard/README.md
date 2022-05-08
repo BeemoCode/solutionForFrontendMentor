@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
+- Solution URL: [Github](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/time-tracking-dashboard/src)
 - Live Site URL: [Netlify](https://dashboard-frontendmentor-faleev.netlify.app/)
 
 ## My process
