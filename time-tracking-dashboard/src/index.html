@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-4-2">
+        <div class="card report">
+          <div class="report-bio">
+            <div class="report-bio-box-photo">
+              <img
+                class="report-bio-photo"
+                src="images/image-jeremy.png"
+                alt="Jeremy photo"
+              />
+            </div>
+            <div class="description">
+              <p class="report-bio-head">Report for</p>
+              <p class="report-bio-name">Jeremy Robson</p>
+            </div>
+          </div>
+          <div class="report-switch">
+            <ul class="report-switch-list">
+              <li>
+                <label class="report-switch-item">
+                  <input
+                    class="switch"
+                    type="radio"
+                    name="switch-item"
+                    value="Daily"
+                  />
+                  <span class="report-switch-item-text">Daily</span>
+                </label>
+              </li>
+              <li>
+                <label class="report-switch-item">
+                  <input
+                    class="switch"
+                    type="radio"
+                    name="switch-item"
+                    value="Weekly"
+                    checked
+                  />
+                  <span class="report-switch-item-text">Weekly</span>
+                </label>
+              </li>
+              <li>
+                <label class="report-switch-item">
+                  <input
+                    class="switch"
+                    type="radio"
+                    name="switch-item"
+                    value="Monthly"
+                  />
+                  <span class="report-switch-item-text">Monthly</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card data-card work">
+          <div class="img-box">
+            <img class="img-work" src="images/icon-work.svg" alt="" />
+          </div>
+
+          <div class="title">
+            <p>Work</p>
+            <img src="images/icon-ellipsis.svg" alt="" />
+          </div>
+
+          <div class="time">
+            <p class="cur-time">32hrs</p>
+            <p class="prev-time">Last Week - 36hrs</p>
+          </div>
+        </div>
+
+        <div class="card data-card play">
+          <div class="img-box">
+            <img class="img-play" src="images/icon-play.svg" alt="" />
+          </div>
+
+          <div class="title">
+            <p>Play</p>
+            <img src="images/icon-ellipsis.svg" alt="" />
+          </div>
+
+          <div class="time">
+            <p class="cur-time">10hrs</p>
+            <p class="prev-time">Last Week - 8hrs</p>
+          </div>
+        </div>
+
+        <div class="card data-card study">
+          <div class="img-box">
+            <img class="img-study" src="images/icon-study.svg" alt="" />
+          </div>
+
+          <div class="title">
+            <p>Study</p>
+            <img src="images/icon-ellipsis.svg" alt="" />
+          </div>
+
+          <div class="time">
+            <p class="cur-time">4hrs</p>
+            <p class="prev-time">Last Week - 7hrs</p>
+          </div>
+        </div>
+
+        <div class="card data-card exercise">
+          <div class="img-box">
+            <img class="img-exercise" src="images/icon-exercise.svg" alt="" />
+          </div>
+          <div class="title">
+            <p>Exercise</p>
+            <img src="images/icon-ellipsis.svg" alt="" />
+          </div>
+
+          <div class="time">
+            <p class="cur-time">4hrs</p>
+            <p class="prev-time">Last Week - 5hrs</p>
+          </div>
+        </div>
+
+        <div class="card data-card social">
+          <div class="img-box">
+            <img class="img-social" src="images/icon-social.svg" alt="" />
+          </div>
+
+          <div class="title">
+            <p>Social</p>
+            <img src="images/icon-ellipsis.svg" alt="" />
+          </div>
+
+          <div class="time">
+            <p class="cur-time">5hrs</p>
+            <p class="prev-time">Last Week - 10hrs</p>
+          </div>
+        </div>
+
+        <div class="card data-card self-care">
+          <div class="img-box">
+            <img class="img-self-care" src="images/icon-self-care.svg" alt="" />
+          </div>
+
+          <div class="title">
+            <p>Self Care</p>
+            <img src="images/icon-ellipsis.svg" alt="" />
+          </div>
+
+          <div class="time">
+            <p class="cur-time">2hrs</p>
+            <p class="prev-time">Last Week - 2hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
