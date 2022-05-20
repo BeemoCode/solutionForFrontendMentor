@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
   list-style: none;
   text-decoration: none;
@@ -17,11 +17,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
   font-size: 1.5rem;
   background-color: #f2f2f2;
@@ -35,11 +35,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 50rem;
 }
 
 .card {
   padding: 4.8rem;
   min-width: 31rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card__logo {
@@ -57,18 +65,21 @@ body {
 .card__paragraph {
   color: rgba(255, 255, 255, 0.749);
   line-height: 1.68;
-  margin-bottom: 8.3rem;
+  margin-bottom: auto;
 }
 
-.card__btn:link,
-.card__btn:visited {
+.card__btn:link, .card__btn:visited {
   display: inline-block;
   padding: 1.25rem 3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border-radius: 3rem;
   background-color: #f2f2f2;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   border: 2px solid transparent;
+  margin-top: 2rem;
 }
 
 .card__btn:hover {
@@ -112,16 +123,18 @@ body {
     margin: 10rem auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 33rem;
+    height: 100%;
   }
   .card {
     -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
   }
   .card__paragraph {
     margin-bottom: 3.5rem;
   }
 }
+/*# sourceMappingURL=main.css.map */
