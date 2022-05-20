@@ -19,3 +19,4 @@ For simplicity, here are links to the work on the levels that are listed on the 
 ### Newbie
 
 - [Article component](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/article-preview-component/src) - [Live Site](https://article-component-frontendmentor-faleev.netlify.app/)
+- [3 column card component](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/article-preview-component/src) - [Live Site](https://3col-card-frontendmentor-faleev.netlify.app/)
