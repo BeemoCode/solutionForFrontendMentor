@@ -1,0 +1,229 @@
+$very-dark-gray: #48556a;
+$dark-gray: #6d7f97;
+$gray: #9eafc2;
+$light-gray: #ecf2f8;
+$share-icon: #6e8098;
+$common-border-radius: 0.8rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3rem;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: $light-gray;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.article {
+  max-width: 73rem;
+  display: flex;
+  position: relative;
+
+  &__img {
+    flex: 1 0 28.5rem;
+    background-image: url(../images/drawers.jpg);
+    background-size: cover;
+    border-radius: $common-border-radius 0 0 $common-border-radius;
+  }
+
+  &__main {
+    padding: 3.2rem 4.6rem 3.2rem 4rem;
+    background-color: #fff;
+    border-radius: 0 $common-border-radius $common-border-radius 0;
+    overflow: hidden;
+  }
+
+  &__heading {
+    color: $very-dark-gray;
+    font-weight: 700;
+    line-height: 1.45;
+
+    letter-spacing: 0.5px;
+    margin-bottom: 1.3rem;
+  }
+
+  &__paragraph {
+    color: $dark-gray;
+    line-height: 1.5;
+    word-spacing: 0.2px;
+
+    letter-spacing: 0.1px;
+    margin-bottom: 2rem;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    gap: 1.5rem;
+
+    .author {
+      &__img {
+        border-radius: 50%;
+        height: 100%;
+      }
+
+      &__name {
+        display: block;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        color: $very-dark-gray;
+        margin-bottom: 0.2rem;
+      }
+      &__date {
+        display: block;
+        color: $gray;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+      }
+    }
+
+    &-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &.show .article__share-links {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(57%, -15%);
+      }
+    }
+  }
+
+  &__share {
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-gray;
+    transform: translateX(40%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $gray;
+      .share-img {
+        fill: $light-gray;
+      }
+    }
+
+    .share-img {
+      width: 1.5rem;
+      height: 1.3rem;
+      fill: $share-icon;
+    }
+  }
+  &__share-links {
+    background-color: $very-dark-gray;
+    padding: 1.5rem 3.6rem;
+    border-radius: $common-border-radius;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(57%, 10%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+
+    &::before {
+      content: "";
+      width: 3rem;
+      height: 1.5rem;
+      background-color: inherit;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+      position: absolute;
+      right: 50%;
+      bottom: 0;
+      transform: translate(65%, 80%);
+    }
+
+    .share-text {
+      font-size: 1.3rem;
+      letter-spacing: 0.6rem;
+      text-transform: uppercase;
+      color: $light-gray;
+      font-weight: 300;
+    }
+  }
+}
+
+@media (max-width: 47em) {
+  body {
+    height: 100%;
+  }
+  .container {
+    padding: 8rem 2rem;
+  }
+  .article {
+    flex-direction: column;
+    max-width: 37.5rem;
+
+    &__heading {
+      font-size: 1.7rem;
+    }
+
+    &__img {
+      flex: 1 0 25.5rem;
+      border-radius: $common-border-radius $common-border-radius 0 0;
+    }
+
+    &__main {
+      border-radius: 0 0 $common-border-radius $common-border-radius;
+    }
+
+    &__author-section {
+      &.show {
+        .article__share-links {
+          transform: translate(0);
+        }
+        .article__share {
+          transform: translateY(1rem);
+        }
+      }
+      margin-bottom: -1rem;
+    }
+
+    &__share {
+      transform: translateX(0);
+      z-index: 4;
+    }
+    &__share-links {
+      padding: 2rem 3.6rem;
+      top: initial;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      transform: translate(0);
+
+      &::before {
+        content: "";
+        display: none;
+      }
+    }
+  }
+}
