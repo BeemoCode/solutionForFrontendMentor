@@ -1,0 +1,117 @@
+$orange: #e38826;
+$cyan: #006970;
+$dark-cyan: #004241;
+$color-paragraph: hsla(0, 0%, 100%, 0.749);
+$main-light-gray: #f2f2f2; // background, headings, buttons
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  background-color: $main-light-gray;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card-box {
+  max-width: 92rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.card {
+  padding: 4.8rem;
+  min-width: 31rem;
+
+  &__logo {
+    margin-bottom: 3rem;
+  }
+
+  &__heading {
+    font-family: "Big Shoulders Display", cursive;
+    color: $main-light-gray;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 2.7rem;
+  }
+
+  &__paragraph {
+    color: $color-paragraph;
+    line-height: 1.68;
+    margin-bottom: 8.3rem;
+  }
+
+  &__btn:link,
+  &__btn:visited {
+    display: inline-block;
+    padding: 1.25rem 3rem;
+    border-radius: 3rem;
+    background-color: $main-light-gray;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+  }
+
+  &__btn {
+    &:hover {
+      background-color: transparent;
+      border: 2px solid $main-light-gray;
+
+      .card__btn-text {
+        color: $main-light-gray;
+      }
+    }
+  }
+
+  &--1 {
+    background-color: $orange;
+    .card__btn-text {
+      color: $orange;
+    }
+  }
+
+  &--2 {
+    background-color: $cyan;
+    .card__btn-text {
+      color: $cyan;
+    }
+  }
+
+  &--3 {
+    background-color: $dark-cyan;
+    .card__btn-text {
+      color: $dark-cyan;
+    }
+  }
+}
+
+@media (max-width: 58em) {
+  body {
+    height: 100%;
+  }
+
+  .card-box {
+    margin: 10rem auto;
+    flex-direction: column;
+    width: 33rem;
+  }
+
+  .card {
+    flex-grow: 0;
+    &__paragraph {
+      margin-bottom: 3.5rem;
+    }
+  }
+}
