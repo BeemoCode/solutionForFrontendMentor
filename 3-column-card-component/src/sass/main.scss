@@ -30,11 +30,14 @@ body {
   border-radius: 1rem;
   overflow: hidden;
   display: flex;
+  min-height: 50rem;
 }
 
 .card {
   padding: 4.8rem;
   min-width: 31rem;
+  display: flex;
+  flex-direction: column;
 
   &__logo {
     margin-bottom: 3rem;
@@ -51,17 +54,20 @@ body {
   &__paragraph {
     color: $color-paragraph;
     line-height: 1.68;
-    margin-bottom: 8.3rem;
+    // margin-bottom: 8.3rem;
+    margin-bottom: auto;
   }
 
   &__btn:link,
   &__btn:visited {
     display: inline-block;
     padding: 1.25rem 3rem;
+    width: fit-content;
     border-radius: 3rem;
     background-color: $main-light-gray;
     transition: all 0.2s ease;
     border: 2px solid transparent;
+    margin-top: 2rem;
   }
 
   &__btn {
@@ -106,6 +112,7 @@ body {
     margin: 10rem auto;
     flex-direction: column;
     width: 33rem;
+    height: 100%;
   }
 
   .card {
