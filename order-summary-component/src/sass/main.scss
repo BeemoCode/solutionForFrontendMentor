@@ -1,0 +1,157 @@
+$primary-pale-blue: #e0e8ff; // bg
+$primary-blue: #3829e0;
+
+$white: #fff;
+$very-pale-blue: #f5f7ff;
+$desaturated-blue: #7280a7;
+$dark-blue: #1f2f56;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: $primary-pale-blue;
+}
+
+.order {
+  max-width: 45rem;
+  background-color: $white;
+  overflow: hidden;
+  border-radius: 2rem;
+  text-align: center;
+
+  &__summary {
+    padding: 4.3rem 4.8rem;
+  }
+  &__img {
+    width: 100%;
+  }
+
+  &__heading {
+    font-size: 2.7rem;
+    letter-spacing: 0.5px;
+    font-weight: 900;
+    color: $dark-blue;
+  }
+
+  &__description {
+    padding: 1.7rem;
+    line-height: 1.6;
+    color: $desaturated-blue;
+    margin-bottom: 0.7rem;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: $very-pale-blue;
+    padding: 2.3rem 2.5rem;
+    border-radius: 1rem;
+    margin-bottom: 3.6rem;
+
+    &-img {
+      margin-right: 1.8rem;
+    }
+
+    &-plan-type {
+      display: block;
+      font-weight: 900;
+      padding-bottom: 0.4rem;
+      color: $dark-blue;
+    }
+    &-plan-cost {
+      display: block;
+      color: $desaturated-blue;
+      letter-spacing: 0.2px;
+    }
+    &-link {
+      &:link,
+      &:visited {
+        display: inline-block;
+        margin-left: auto;
+        text-decoration: underline;
+        letter-spacing: -0.2px;
+        font-weight: 900;
+        font-size: 1.4rem;
+        color: $primary-blue;
+        transition: all 0.3s;
+      }
+
+      &:hover,
+      &:active {
+        color: lighten($primary-blue, 15%);
+        text-decoration: none;
+      }
+    }
+  }
+
+  %order-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  &__btn-proceed {
+    @extend %order-btn;
+    color: $very-pale-blue;
+    background-color: $primary-blue;
+    width: 100%;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    margin-bottom: 2.8rem;
+    box-shadow: 0 2.8rem 1.9rem 0 rgba($primary-blue, 0.15);
+
+    &:hover {
+      background-color: lighten($primary-blue, 15%);
+    }
+  }
+
+  &__btn-cancel {
+    @extend %order-btn;
+    background-color: transparent;
+    padding: 0.4rem;
+    color: $desaturated-blue;
+    font-weight: 900;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}
+
+@media (max-width: 30em) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+  .order {
+    max-width: 34.5rem;
+
+    &__summary {
+      padding: 2.3rem 2.4rem;
+    }
+  }
+}
