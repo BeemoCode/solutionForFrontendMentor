@@ -42,6 +42,8 @@ body {
   overflow: hidden;
   border-radius: 2rem;
   text-align: center;
+  -webkit-box-shadow: 0 2.8rem 1.9rem 0 rgba(56, 41, 224, 0.15);
+          box-shadow: 0 2.8rem 1.9rem 0 rgba(56, 41, 224, 0.15);
 }
 
 .order__summary {
