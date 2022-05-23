@@ -22,3 +22,4 @@ For simplicity, here are links to the work on the levels that are listed on the 
 - [Article component](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/article-preview-component/src) - [Live Site](https://article-component-frontendmentor-faleev.netlify.app/)
 - [3 column card component](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/article-preview-component/src) - [Live Site](https://3col-card-frontendmentor-faleev.netlify.app/)
 - [QR-code component](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/qr-code-component/src) - [Live Site](https://qr-component-frontendmentor-faleev.netlify.app/)
+- [Profile card component](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/profile-card-component/src) - [Live Site](https://profile-card-fm-faleev.netlify.app/)
