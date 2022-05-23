@@ -1,0 +1,124 @@
+$dark-cyan: hsl(185, 75%, 39%);
+$white: hsl(0, 0%, 100%);
+$very-dark-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 45%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $dark-cyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-img {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &__top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-33%, -54%);
+  }
+
+  &__bottom {
+    position: absolute;
+    left: 47%;
+    top: 53%;
+  }
+}
+
+.profile-card {
+  max-width: 35rem;
+  background-color: $white;
+  border-radius: 1.4rem;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  box-shadow: 1rem 4rem 4rem rgba($very-dark-blue, 0.3);
+
+  &__photo {
+    margin-top: 6.8rem;
+  }
+  &__img-box {
+    width: 10.5rem;
+    height: 10.5rem;
+    background-color: $white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 11%);
+  }
+  &__img {
+    height: 90%;
+    border-radius: 50%;
+  }
+
+  &__name {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-right: 0.7rem;
+    margin-bottom: 1rem;
+    color: $very-dark-blue;
+  }
+  &__age {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $dark-grayish-blue;
+  }
+  &__city {
+    display: block;
+    margin-bottom: 2.3rem;
+    font-size: 1.4rem;
+    color: $dark-grayish-blue;
+  }
+}
+
+.stats {
+  display: flex;
+  gap: 4.8rem;
+  padding: 2.5rem 4.4rem;
+  border-top: 1px solid rgba($dark-gray, 0.2);
+
+  &__item {
+    padding-left: 0.4rem;
+  }
+  &__quantity {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $very-dark-blue;
+    letter-spacing: 0.5px;
+  }
+  &__type {
+    display: block;
+    font-size: 1.2rem;
+    color: $dark-gray;
+    padding-top: 0.3rem;
+    letter-spacing: 0.5px;
+  }
+}

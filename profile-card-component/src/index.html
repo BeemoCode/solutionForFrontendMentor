@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body>
+    <main>
+      <div class="bg-img">
+        <img class="bg-img__top" src="/src/images/bg-pattern-top.svg" alt="" />
+        <img
+          class="bg-img__bottom"
+          src="/src/images/bg-pattern-bottom.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-card__bg-top">
+          <img
+            class="profile-card__bg-top-img"
+            src="/src/images/bg-pattern-card.svg"
+            alt="bg"
+          />
+        </div>
+
+        <figure class="profile-card__photo">
+          <div class="profile-card__img-box">
+            <img
+              class="profile-card__img"
+              src="/src/images/image-victor.jpg"
+              alt="Victor"
+            />
+          </div>
+          <figcaption>
+            <h2 class="profile-card__name">Victor Crest</h2>
+            <span class="profile-card__age">26</span>
+            <span class="profile-card__city">London</span>
+          </figcaption>
+        </figure>
+
+        <div class="stats">
+          <div class="stats__item">
+            <span class="stats__quantity">80K</span>
+            <span class="stats__type">Followers</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__quantity">803K</span>
+            <span class="stats__type">Likes</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__quantity">1.4K</span>
+            <span class="stats__type">Photos</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
