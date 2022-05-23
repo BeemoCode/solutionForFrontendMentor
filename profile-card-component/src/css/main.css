@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+ul li {
+  list-style: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -36,10 +40,11 @@ body {
 
 .bg-img__top {
   position: absolute;
+  display: inline-block;
   left: 0;
   top: 0;
-  -webkit-transform: translate(-33%, -54%);
-          transform: translate(-33%, -54%);
+  -webkit-transform: translate(-33%, -55%);
+          transform: translate(-33%, -55%);
 }
 
 .bg-img__bottom {

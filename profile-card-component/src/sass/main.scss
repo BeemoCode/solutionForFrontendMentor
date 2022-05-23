@@ -9,6 +9,9 @@ $dark-gray: hsl(0, 0%, 45%);
   padding: 0;
   box-sizing: border-box;
 }
+ul li {
+  list-style: none;
+}
 
 html {
   font-size: 62.5%;
@@ -34,9 +37,10 @@ body {
 
   &__top {
     position: absolute;
+    display: inline-block;
     left: 0;
     top: 0;
-    transform: translate(-33%, -54%);
+    transform: translate(-33%, -55%);
   }
 
   &__bottom {
