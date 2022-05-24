@@ -1,0 +1,180 @@
+$cyan: #2ab2af;
+$light-cyan: #55c1bf;
+$bright-yellow: #c0df34;
+
+$light-gray: #e5eff5;
+$grayish-blue: #98a6bd;
+
+$white: #ffffff;
+$black: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+  background-color: $light-gray;
+}
+
+.primary-heading {
+  color: $cyan;
+  letter-spacing: -0.3px;
+  font-size: 2.4rem;
+}
+
+.secondary-heading {
+  font-size: 1.7rem;
+  letter-spacing: 0.3px;
+  color: $white;
+}
+
+.price-grid {
+  max-width: 63.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 26rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0rem 2rem 3rem rgba($black, 0.1);
+
+  &__section {
+    padding: 4rem;
+
+    &--1 {
+      background-color: $white;
+      grid-column: 1 / -1;
+
+      .secondary-heading {
+        color: $bright-yellow;
+        font-weight: 700;
+
+        margin: 2.4rem 0 1.2rem;
+      }
+    }
+
+    &--2 {
+      background-color: $cyan;
+    }
+    &--3 {
+      background-color: $light-cyan;
+    }
+  }
+
+  &__description {
+    color: $grayish-blue;
+    line-height: 1.6;
+    letter-spacing: -0.16px;
+  }
+
+  &__about-subs {
+    color: $white;
+    margin-top: 1.9rem;
+  }
+
+  &__subs {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    &-price {
+      font-size: 3.1rem;
+      font-weight: 700;
+    }
+
+    &-type {
+      color: $light-gray;
+    }
+
+    &-description {
+      margin-top: 0.8rem;
+      letter-spacing: -0.2px;
+    }
+  }
+
+  &__btn {
+    &:link,
+    &:visited {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 1.4rem;
+      background-color: $bright-yellow;
+      color: $white;
+      margin-top: 3rem;
+      border-radius: 0.4rem;
+      box-shadow: 0rem 1rem 2rem rgba($black, 0.15);
+      transition: all 0.2s ease-out;
+    }
+
+    &:hover {
+      background-color: lighten($bright-yellow, 10%);
+    }
+    &:active {
+      box-shadow: 0rem 0.5rem 1rem rgba($black, 0.15);
+      transform: translateY(0.5px);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 0.3rem;
+
+    &-item {
+      color: $white;
+      font-size: 1.4rem;
+      letter-spacing: -0.1px;
+    }
+  }
+}
+
+@media (max-width: 40em) {
+  .price-grid {
+    margin: 2rem 0;
+    grid-template-columns: 35rem;
+    grid-template-rows: auto;
+
+    &__description {
+      line-height: 1.8;
+    }
+
+    &__section {
+      padding: 3rem 2.5rem 2.5rem;
+
+      &--1 {
+        padding: 3rem 2.5rem 3.5rem;
+
+        .secondary-heading {
+          padding-right: 0.4rem;
+          font-size: 1.8rem;
+          margin-bottom: 2.2rem;
+        }
+      }
+    }
+  }
+
+  .secondary-heading {
+    font-size: 1.9rem;
+  }
+}
