@@ -1,0 +1,199 @@
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+$very-dark-blue1: hsl(217, 54%, 11%); // (main BG)
+$very-dark-blue2: hsl(216, 50%, 16%); // (card BG)
+$very-dark-blue3: hsl(215, 32%, 27%); //  (line)
+$white: hsl(0, 0%, 100%);
+
+@mixin flex($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+@mixin width-height-opacity($w, $h, $opacity) {
+  width: $w;
+  height: $h;
+  opacity: $opacity;
+}
+%shadow-card {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4rem;
+  background-color: darken($very-dark-blue1, 5%);
+  z-index: -1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  @include flex(center, center);
+  min-height: 100vh;
+  background-color: $very-dark-blue1;
+}
+
+.nft-card {
+  background-color: $very-dark-blue2;
+  width: 35rem;
+  min-height: 59rem;
+  padding: 2.3rem;
+  border-radius: 1.2rem;
+  position: relative;
+  margin: 1rem;
+
+  &::before {
+    @extend %shadow-card;
+    @include width-height-opacity(38rem, 61rem, 0.15);
+
+    transform: translate(-1.5rem, 2rem);
+  }
+
+  &::after {
+    @extend %shadow-card;
+    @include width-height-opacity(44rem, 68rem, 0.08);
+    @media (max-width: 27em) {
+      width: 38rem;
+      transform: translate(-1.5rem, -3rem);
+    }
+    transform: translate(-4.5rem, -3rem);
+  }
+
+  &__img-box {
+    margin-bottom: 2rem;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      @include width-height-opacity(4.8rem, 4.8rem, 0);
+      background-image: url(../images/icon-view.svg);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.4s;
+    }
+
+    &::before {
+      content: "";
+      @include width-height-opacity(100%, 100%, 0);
+
+      position: absolute;
+      background-color: rgba($cyan, 0.6);
+      border-radius: 1rem;
+      transition: all 0.4s;
+    }
+
+    &:hover {
+      &::after,
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  &__img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  &__title {
+    margin-bottom: 1.7rem;
+
+    &-link {
+      &:link,
+      &:visited {
+        display: inline-block;
+        color: $white;
+        font-size: 2.2rem;
+        transition: color 0.2s;
+      }
+
+      &:hover,
+      &:active {
+        color: $cyan;
+      }
+    }
+  }
+  &__description {
+    color: $soft-blue;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.45;
+    margin-bottom: 2.3rem;
+  }
+
+  &__price-about {
+    @include flex(space-between, center);
+    font-size: 1.6rem;
+    margin-bottom: 2.2rem;
+  }
+  &__price-info {
+    @include flex(flex-start, center);
+    gap: 0.7rem;
+  }
+  &__price-text {
+    color: $cyan;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+  }
+  &__time-img {
+    height: 100%;
+  }
+  &__time-text {
+    color: $soft-blue;
+    padding-right: 0.5rem;
+    letter-spacing: 0.1px;
+  }
+
+  &__creator-info {
+    @include flex(flex-start, center);
+    gap: 1.5rem;
+    border-top: 0.5px solid $very-dark-blue3;
+    padding-top: 1.6rem;
+  }
+
+  &__creator-img-box {
+    @include flex(center, center);
+
+    height: 3.4rem;
+    width: 3.4rem;
+    border-radius: 50%;
+
+    background-color: $white;
+  }
+
+  &__creator-img {
+    width: 90%;
+  }
+
+  &__creator {
+    font-size: 1.6rem;
+    color: $soft-blue;
+
+    &-name {
+      &:link,
+      &:visited {
+        color: $white;
+        letter-spacing: 0.1px;
+        transition: color 0.2s;
+      }
+
+      &:hover,
+      &:active {
+        color: $cyan;
+      }
+    }
+  }
+}
