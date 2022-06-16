@@ -13,6 +13,9 @@
   &::-webkit-inner-spin-button {
     display: none;
   }
+
+  -moz-appearance: textfield;
+
   &:focus {
     outline: 3px solid $primary-color;
   }

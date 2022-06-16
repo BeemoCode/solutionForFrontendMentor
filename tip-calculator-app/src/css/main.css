@@ -51,6 +51,7 @@ body {
   position: relative;
   z-index: 5;
   text-align: right;
+  -moz-appearance: textfield;
 }
 
 .input::-webkit-outer-spin-button, .input::-webkit-inner-spin-button {
