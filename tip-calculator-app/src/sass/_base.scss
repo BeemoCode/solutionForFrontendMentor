@@ -1,0 +1,60 @@
+// Variables
+
+// Colors
+$primary-color: hsl(172, 67%, 45%);
+$very-dark-cyan: hsl(183, 100%, 15%); //display, primary heading
+$dark-grayish-cyan: hsl(186, 14%, 43%); //secondary-text
+$grayish-cyan: hsl(184, 14%, 56%); //input bg + reset hover
+$light-grayish-cyan: hsl(185, 41%, 84%); // body bg
+$very-light-grayish-cyan: hsl(189, 41%, 97%);
+$white-color: hsl(0, 0%, 100%);
+$black-color: #000;
+$error-color: #ff6b6b;
+
+// Mixins
+
+// Reset base style
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+  cursor: pointer;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Space Mono", sans-serif;
+  font-size: 1.6rem;
+  background-color: $light-grayish-cyan;
+}
+
+/// Extends and Mixins
+
+%input-btn {
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin colors($bgc, $color) {
+  background-color: $bgc;
+  color: $color;
+}

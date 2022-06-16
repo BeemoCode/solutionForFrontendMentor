@@ -1,0 +1,220 @@
+/// INPUT
+
+.input {
+  @extend %input-btn;
+  @include colors($very-light-grayish-cyan, $very-dark-cyan);
+
+  position: relative;
+  z-index: 5;
+
+  text-align: right;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    display: none;
+  }
+  &:focus {
+    outline: 3px solid $primary-color;
+  }
+
+  &::placeholder {
+    color: $grayish-cyan;
+  }
+
+  &--bill {
+    padding: 0.5rem 1.7rem;
+    background: $very-light-grayish-cyan url(../images/icon-dollar.svg)
+      no-repeat 2rem 50%;
+  }
+
+  &--person {
+    padding: 0.5rem 1.7rem;
+    background: $very-light-grayish-cyan url(../images/icon-person.svg)
+      no-repeat 1.85rem 50%;
+  }
+  &--custom {
+    padding: 0.6rem;
+    &::placeholder {
+      text-align: center;
+      color: $very-dark-cyan;
+    }
+  }
+}
+// Fix it!
+
+/// SELECT TIP
+.select-tip {
+  &__label {
+    margin-bottom: 1.5rem;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.4rem;
+    row-gap: 1.6rem;
+
+    @media only screen and (max-width: 55em) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__btn {
+    @extend %input-btn;
+    @include colors($very-dark-cyan, $very-light-grayish-cyan);
+
+    padding: 0.5rem;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:not(:last-child):hover {
+      @include colors($primary-color, $very-dark-cyan);
+    }
+    &:not(:last-child):active,
+    &--active {
+      @include colors(lighten($primary-color, 10%), $very-dark-cyan);
+    }
+  }
+}
+
+/// INPUT BOX
+.input-box {
+  position: relative;
+
+  &--required {
+    .input {
+      outline: 3px solid $error-color;
+    }
+
+    .input-box__error {
+      top: 14%;
+      opacity: 1;
+    }
+  }
+
+  &__label {
+    padding-top: 1.3rem;
+    margin-bottom: 0.7rem;
+  }
+
+  &__error {
+    display: inline-block;
+    font-weight: 700;
+    color: $error-color;
+    position: absolute;
+    top: 50%; // 14 default
+    right: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.3s;
+  }
+}
+
+/// CALCULATOR
+.calculator {
+  @extend %flex-column;
+  flex: 1 1 40%;
+
+  &__input-box:first-child {
+    margin-bottom: 4.2rem;
+  }
+
+  &__select-tip {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/// LABEL
+.label {
+  font-weight: 700;
+  color: $dark-grayish-cyan;
+  display: inline-block;
+}
+
+/// PRIMARY HEADING
+.primary-heading {
+  text-align: center;
+  color: $very-dark-cyan;
+  span {
+    display: block;
+    font-size: 2.4rem;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+  }
+}
+
+/// DISPLAY
+.display {
+  padding: 5.3rem 4rem 4rem 4rem;
+  border-radius: 1.5rem;
+  background-color: $very-dark-cyan;
+  @extend %flex-column;
+  flex: 1 1 44%;
+
+  @media only screen and (max-width: 55em) {
+    padding: 4.3rem 3rem 3rem 3rem;
+  }
+
+  &__panel {
+    @extend %flex-column;
+    gap: 5rem;
+
+    @media only screen and (max-width: 55em) {
+      gap: 3rem;
+    }
+  }
+
+  &__btn {
+    @extend %input-btn;
+    @include colors(lighten($very-dark-cyan, 7%), $very-dark-cyan);
+
+    font-size: 2rem;
+    margin-top: auto;
+    padding: 1.1rem 0.5rem 0.9rem 0rem;
+    text-transform: uppercase;
+    box-shadow: 0 0 2rem rgba($black-color, 0.1);
+    transition: all 0.3s;
+
+    @media only screen and (max-width: 55em) {
+      margin-top: 3rem;
+    }
+    &--active,
+    &:hover {
+      @include colors($primary-color, $very-dark-cyan);
+    }
+    &:active {
+      background-color: lighten($primary-color, 10%);
+    }
+  }
+}
+
+/// RESULT
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  gap: 1rem;
+
+  &__main-text {
+    display: block;
+    color: $very-light-grayish-cyan;
+  }
+
+  &__secondary-text {
+    display: block;
+    font-size: 1.3rem;
+    color: $grayish-cyan;
+  }
+
+  &__value-text {
+    color: $primary-color;
+    font-size: 4.7rem;
+    letter-spacing: -0.5px;
+    line-height: 1;
+
+    @media only screen and (max-width: 56em) {
+      font-size: 4rem;
+    }
+  }
+}

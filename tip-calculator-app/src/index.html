@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="primary-heading">
+          <span>Spli</span>
+          <span>Tter</span>
+        </h1>
+
+        <div class="tip-calculator">
+          <!-- Main calculation -->
+          <div class="calculator">
+            <div class="calculator__input-box input-box">
+              <label>
+                <span class="input-box__label label">Bill</span>
+                <input
+                  id="bill"
+                  class="input input--bill calc-input"
+                  type="number"
+                  placeholder="0"
+                />
+                <span class="input-box__error"> Can't be zero </span>
+              </label>
+            </div>
+
+            <div class="calculator__select-tip select-tip">
+              <span class="select-tip__label label">Select Tip %</span>
+              <div class="select-tip__buttons">
+                <input class="select-tip__btn" type="button" value="5%" />
+                <input class="select-tip__btn" type="button" value="10%" />
+                <input class="select-tip__btn" type="button" value="15%" />
+                <input class="select-tip__btn" type="button" value="25%" />
+                <input class="select-tip__btn" type="button" value="50%" />
+                <input
+                  class="input input--custom"
+                  type="number"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+
+            <div class="calculator__input-box input-box">
+              <label>
+                <span class="input-box__label label">Number of People</span>
+                <input
+                  id="people"
+                  class="input input--person calc-input"
+                  type="number"
+                  placeholder="0"
+                />
+                <span class="input-box__error"> Can't be zero </span>
+              </label>
+            </div>
+          </div>
+
+          <!--Display block-->
+          <div class="display">
+            <div class="display__panel">
+              <div class="result">
+                <div class="result__label">
+                  <span class="result__main-text">Tip Amount</span>
+                  <span class="result__secondary-text">/ person</span>
+                </div>
+
+                <div class="result__value">
+                  <span class="result__value-text"
+                    >$<span id="tip-value">0.00</span></span
+                  >
+                </div>
+              </div>
+
+              <div class="result">
+                <div class="result__label">
+                  <span class="result__main-text">Total</span>
+                  <span class="result__secondary-text">/ person</span>
+                </div>
+                <div class="result__value">
+                  <span class="result__value-text"
+                    >$<span id="total-value">0.00</span></span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <input class="display__btn" type="button" value="reset" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

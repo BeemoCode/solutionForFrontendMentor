@@ -1,0 +1,33 @@
+@import "base";
+@import "components";
+
+// Main Styles
+
+.container {
+  @extend %flex-column;
+  max-width: 93rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  gap: 7rem;
+  min-height: 100vh;
+  justify-content: center;
+
+  @media only screen and (max-width: 55em) {
+    max-width: 50rem;
+  }
+}
+
+.tip-calculator {
+  padding: 3.1rem 3.2rem 3rem 4.7rem;
+  width: 100%;
+  min-height: 48rem;
+  border-radius: 2.5rem;
+  background-color: $white-color;
+  display: flex;
+  gap: 4.7rem;
+
+  @media only screen and (max-width: 55em) {
+    flex-direction: column;
+    padding: 2.1rem 2.2rem 2rem 2.2rem;
+  }
+}

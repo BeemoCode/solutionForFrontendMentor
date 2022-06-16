@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", sans-serif;
+  font-size: 1.6rem;
+  background-color: #c5e4e7;
+}
+
+.input, .select-tip__btn, .display__btn {
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
+
+.calculator, .display, .display__panel, .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input {
+  background-color: #f4fafa;
+  color: #00494d;
+  position: relative;
+  z-index: 5;
+  text-align: right;
+}
+
+.input::-webkit-outer-spin-button, .input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.input:focus {
+  outline: 3px solid #26c0ab;
+}
+
+.input::-webkit-input-placeholder {
+  color: #7f9c9f;
+}
+
+.input:-ms-input-placeholder {
+  color: #7f9c9f;
+}
+
+.input::-ms-input-placeholder {
+  color: #7f9c9f;
+}
+
+.input::placeholder {
+  color: #7f9c9f;
+}
+
+.input--bill {
+  padding: 0.5rem 1.7rem;
+  background: #f4fafa url(../images/icon-dollar.svg) no-repeat 2rem 50%;
+}
+
+.input--person {
+  padding: 0.5rem 1.7rem;
+  background: #f4fafa url(../images/icon-person.svg) no-repeat 1.85rem 50%;
+}
+
+.input--custom {
+  padding: 0.6rem;
+}
+
+.input--custom::-webkit-input-placeholder {
+  text-align: center;
+  color: #00494d;
+}
+
+.input--custom:-ms-input-placeholder {
+  text-align: center;
+  color: #00494d;
+}
+
+.input--custom::-ms-input-placeholder {
+  text-align: center;
+  color: #00494d;
+}
+
+.input--custom::placeholder {
+  text-align: center;
+  color: #00494d;
+}
+
+.select-tip__label {
+  margin-bottom: 1.5rem;
+}
+
+.select-tip__buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 1.4rem;
+          column-gap: 1.4rem;
+  row-gap: 1.6rem;
+}
+
+@media only screen and (max-width: 55em) {
+  .select-tip__buttons {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.select-tip__btn {
+  background-color: #00494d;
+  color: #f4fafa;
+  padding: 0.5rem;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.select-tip__btn:not(:last-child):hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.select-tip__btn:not(:last-child):active, .select-tip__btn--active {
+  background-color: #3fd9c5;
+  color: #00494d;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box--required .input {
+  outline: 3px solid #ff6b6b;
+}
+
+.input-box--required .input-box__error {
+  top: 14%;
+  opacity: 1;
+}
+
+.input-box__label {
+  padding-top: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.input-box__error {
+  display: inline-block;
+  font-weight: 700;
+  color: #ff6b6b;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.calculator {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+}
+
+.calculator__input-box:first-child {
+  margin-bottom: 4.2rem;
+}
+
+.calculator__select-tip {
+  margin-bottom: 2.5rem;
+}
+
+.label {
+  font-weight: 700;
+  color: #5e7a7d;
+  display: inline-block;
+}
+
+.primary-heading {
+  text-align: center;
+  color: #00494d;
+}
+
+.primary-heading span {
+  display: block;
+  font-size: 2.4rem;
+  padding-left: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.display {
+  padding: 5.3rem 4rem 4rem 4rem;
+  border-radius: 1.5rem;
+  background-color: #00494d;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 44%;
+          flex: 1 1 44%;
+}
+
+@media only screen and (max-width: 55em) {
+  .display {
+    padding: 4.3rem 3rem 3rem 3rem;
+  }
+}
+
+.display__panel {
+  gap: 5rem;
+}
+
+@media only screen and (max-width: 55em) {
+  .display__panel {
+    gap: 3rem;
+  }
+}
+
+.display__btn {
+  background-color: #006b70;
+  color: #00494d;
+  font-size: 2rem;
+  margin-top: auto;
+  padding: 1.1rem 0.5rem 0.9rem 0rem;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 55em) {
+  .display__btn {
+    margin-top: 3rem;
+  }
+}
+
+.display__btn--active, .display__btn:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.display__btn:active {
+  background-color: #3fd9c5;
+}
+
+.result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  gap: 1rem;
+}
+
+.result__main-text {
+  display: block;
+  color: #f4fafa;
+}
+
+.result__secondary-text {
+  display: block;
+  font-size: 1.3rem;
+  color: #7f9c9f;
+}
+
+.result__value-text {
+  color: #26c0ab;
+  font-size: 4.7rem;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 56em) {
+  .result__value-text {
+    font-size: 4rem;
+  }
+}
+
+.container {
+  max-width: 93rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  gap: 7rem;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 55em) {
+  .container {
+    max-width: 50rem;
+  }
+}
+
+.tip-calculator {
+  padding: 3.1rem 3.2rem 3rem 4.7rem;
+  width: 100%;
+  min-height: 48rem;
+  border-radius: 2.5rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4.7rem;
+}
+
+@media only screen and (max-width: 55em) {
+  .tip-calculator {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2.1rem 2.2rem 2rem 2.2rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
