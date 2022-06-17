@@ -5,6 +5,9 @@ const ratePoll = document.querySelector(".rate__poll");
 const rateThanks = document.querySelector(".rate__thanks");
 const selected = document.getElementById("selected");
 
+// for firefox remove checked by default
+document.querySelector("#select1").checked = false;
+
 const toggleHidden = function () {
   ratePoll.classList.add("rate__poll--hidden");
   rateThanks.classList.remove("rate__thanks--hidden");
