@@ -27,3 +27,4 @@ For simplicity, here are links to the work on the levels that are listed on the 
 - [QR-code component](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/qr-code-component/src) - [Live Site](https://qr-component-frontendmentor-faleev.netlify.app/)
 - [Profile card component](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/profile-card-component/src) - [Live Site](https://profile-card-fm-faleev.netlify.app/)
 - [Single price grid component](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/single-price-grid-component/src) - [Live Site](https://price-grid-component-faleev.netlify.app/)
+- [Interactive rating component](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/interactive-rating-component/src) - [Live Site](https://interactive-rating-comp-fm-faleev.netlify.app/)
