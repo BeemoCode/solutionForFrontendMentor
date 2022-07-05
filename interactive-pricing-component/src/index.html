@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <div class="bg">
+      <img class="bg__img" src="/src/images/bg-pattern.svg" alt="bg" />
+    </div>
+
+    <main class="container">
+      <h1 class="main-heading">Simple, traffic-based pricing</h1>
+      <h2 class="sub-heading">
+        Sign-up for our 30-day trial. No credit card required.
+      </h2>
+      <img
+        class="logo-img"
+        src="/src/images/pattern-circles.svg"
+        alt="circles "
+      />
+
+      <form class="pricing" action="#">
+        <div class="pricing__sub">
+          <div class="sub-details__traffic">
+            <span class="sub-details__traffic-value">100K</span> Pageviews
+          </div>
+
+          <div class="sub-details__price">
+            <span class="sub-details__price-value"
+              >$<span id="price">16.00</span></span
+            >
+            / month
+          </div>
+
+          <div class="pricing__range-box">
+            <input
+              class="pricing__range"
+              id="range"
+              type="range"
+              name="price"
+              value="2"
+              min="0"
+              max="4"
+              step="0.01"
+            />
+          </div>
+        </div>
+
+        <div class="pricing__toggle toggle">
+          <label class="toggle__label toggle__label--monthly" for="monthly">
+            <span class="toggle__text">Monthly Billing</span>
+          </label>
+
+          <div class="toggle__control">
+            <input
+              class="toggle__input toggle__input--start"
+              checked
+              type="radio"
+              name="subscription"
+              id="monthly"
+              value="monthly"
+            />
+            <input
+              class="toggle__input"
+              type="radio"
+              name="subscription"
+              id="yearly"
+              value="yearly"
+            />
+            <div class="toggle__control-ball"></div>
+          </div>
+
+          <label class="toggle__label toggle__label--yearly" for="yearly">
+            <span class="toggle__text">Yearly Billing</span>
+            <span class="pricing__discount">25% discount</span>
+          </label>
+        </div>
+
+        <div class="pricing__cta">
+          <ul class="pricing__features features">
+            <li class="features__item">Unlimited websites</li>
+            <li class="features__item">100% data ownership</li>
+            <li class="features__item">Email reports</li>
+          </ul>
+
+          <input class="pricing__btn" type="submit" value="Start my trial" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
