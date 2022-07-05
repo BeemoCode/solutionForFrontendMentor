@@ -17,6 +17,7 @@ For simplicity, here are links to the work on the levels that are listed on the 
 - [Advice Generator App](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/advice-generator-app-main/src) - [Live Site](https://advice-frontendmentor-faleev.netlify.app/)
 - [Tip Calculator App](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/tip-calculator-app/src) - [Live Site](https://tip-calc-app-fm-faleev.netlify.app/)
 - [Testimonial grid section](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/testimonial-grid-section/src) - [Live Site](https://testimonials-grid-fm-faleev.netlify.app/)
+[Interactive pricing component](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/interactive-pricing-component/src) - [Live Site](https://interactive-pricing-component-faleev.netlify.app/)
 
 ### Newbie
 
