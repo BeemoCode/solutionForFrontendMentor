@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  background-color: #f8e9dd;
+}
+@media only screen and (max-width: 32em) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+.container {
+  max-width: 54rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+@media only screen and (max-width: 32em) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+.expenses-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  gap: 2.3rem;
+}
+
+.balance {
+  height: 12.5rem;
+  background-color: #ec775f;
+  border-radius: 2rem;
+  padding: 4.3rem 3.9rem 3.7rem 3.2rem;
+  color: #fffaf5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.balance__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.6rem;
+}
+.balance__title {
+  opacity: 0.9;
+}
+.balance__money {
+  font-size: 3.3rem;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 32em) {
+  .balance__money {
+    font-size: 2.8rem;
+  }
+}
+
+.stats {
+  min-height: 51.2rem;
+  background-color: #fffaf5;
+  border-radius: 2rem;
+  padding: 3.3rem 3rem 4.1rem 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (max-width: 32em) {
+  .stats {
+    min-height: 45rem;
+    padding: 2.3rem 3rem 3.3rem 2.2rem;
+  }
+}
+.stats__spending-text {
+  font-size: 3.2rem;
+  padding-left: 1.8rem;
+}
+@media only screen and (max-width: 32em) {
+  .stats__spending-text {
+    font-size: 2.6rem;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+.stats__chart {
+  margin-top: 4.4rem;
+  height: 20.5rem;
+  position: relative;
+}
+.stats__report {
+  margin-top: auto;
+}
+
+.report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+.report::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 2px;
+  background-color: #93867b;
+  top: -38px;
+  left: 17px;
+  opacity: 0.15;
+  border-radius: 2rem;
+}
+@media only screen and (max-width: 32em) {
+  .report::before {
+    top: -20px;
+  }
+}
+.report__total {
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.3rem;
+  padding: 0 0 0.4rem 2rem;
+}
+.report__text {
+  color: #93867b;
+  letter-spacing: 0.1px;
+}
+.report__value {
+  font-weight: 600;
+  color: #382314;
+}
+.report__value--big-fz {
+  font-size: 4.8rem;
+}
+@media only screen and (max-width: 32em) {
+  .report__value--big-fz {
+    font-size: 3.6rem;
+  }
+}
+.report__compare {
+  text-align: right;
+  padding: 0 1rem 0.6rem 0;
+}
+
+.chartToolTip {
+  background-color: #382314;
+  width: 75px;
+  height: 40px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transform: translate(-50%, -120%);
+          transform: translate(-50%, -120%);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@media only screen and (max-width: 32em) {
+  .chartToolTip {
+    width: 50px;
+    height: 27px;
+  }
+}
+.chartToolTip__text {
+  color: #fffaf5;
+  font-weight: 800;
+  font-size: 1.8rem;
+  padding-right: 1.5px;
+  letter-spacing: 0.2px;
+}
+@media only screen and (max-width: 32em) {
+  .chartToolTip__text {
+    font-size: 1.3rem;
+  }
+}/*# sourceMappingURL=main.css.map */

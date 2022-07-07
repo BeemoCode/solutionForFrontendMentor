@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="expenses-card">
+        <div class="balance">
+          <div class="balance__details">
+            <p class="balance__title">My balance</p>
+            <p class="balance__money"><span>$</span>921.48</p>
+          </div>
+
+          <div class="balance__logo">
+            <img class="balance__logo-img" src="./images/logo.svg" alt="logo" />
+          </div>
+        </div>
+
+        <div class="stats">
+          <h2 class="stats__spending-text">Spending - Last 7 days</h2>
+
+          <div class="stats__chart">
+            <canvas
+              id="myChart"
+              aria-label="Hello ARIA World"
+              role="img"
+            ></canvas>
+          </div>
+
+          <div class="stats__report report">
+            <div class="report__total">
+              <p class="report__text">Total this month</p>
+              <p class="report__value report__value--big-fz">$478.33</p>
+            </div>
+
+            <div class="report__compare">
+              <p class="report__value">+2.4%</p>
+              <p class="report__text">from last month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

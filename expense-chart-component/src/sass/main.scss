@@ -1,0 +1,202 @@
+$soft-red: #ec775f;
+$cyan: #76b5bc;
+
+$dark-brown: #382314;
+$medium-brown: #93867b;
+$cream: #f8e9dd;
+$very-pale-orange: #fffaf5;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  // Weights: 400, 700
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  background-color: $cream;
+  @media only screen and (max-width: 32em) {
+    font-size: 1.5rem;
+  }
+}
+
+.container {
+  max-width: 54rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+  @media only screen and (max-width: 32em) {
+    padding: 0 1rem;
+  }
+}
+
+.expenses-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2.3rem;
+}
+
+.balance {
+  height: 12.5rem;
+  background-color: $soft-red;
+  border-radius: 2rem;
+  padding: 4.3rem 3.9rem 3.7rem 3.2rem;
+  color: $very-pale-orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  &__title {
+    opacity: 0.9;
+  }
+
+  &__money {
+    font-size: 3.3rem;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    @media only screen and (max-width: 32em) {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+.stats {
+  min-height: 51.2rem;
+  background-color: $very-pale-orange;
+  border-radius: 2rem;
+  padding: 3.3rem 3rem 4.1rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 32em) {
+    min-height: 45rem;
+    padding: 2.3rem 3rem 3.3rem 2.2rem;
+  }
+
+  // .stats__spending-text
+
+  &__spending-text {
+    font-size: 3.2rem;
+    padding-left: 1.8rem;
+    @media only screen and (max-width: 32em) {
+      font-size: 2.6rem;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+  }
+
+  // .stats__chart
+
+  &__chart {
+    margin-top: 4.4rem;
+    height: 20.5rem;
+
+    // test
+    position: relative;
+  }
+
+  &__report {
+    margin-top: auto;
+  }
+}
+
+.report {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 2px;
+    background-color: $medium-brown;
+    top: -38px;
+    left: 17px;
+    opacity: 0.15;
+    border-radius: 2rem;
+    @media only screen and (max-width: 32em) {
+      top: -20px;
+    }
+  }
+
+  &__total {
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding: 0 0 0.4rem 2rem;
+  }
+
+  &__text {
+    color: $medium-brown;
+    letter-spacing: 0.1px;
+  }
+
+  &__value {
+    font-weight: 600;
+    color: $dark-brown;
+
+    &--big-fz {
+      font-size: 4.8rem;
+      @media only screen and (max-width: 32em) {
+        font-size: 3.6rem;
+      }
+    }
+  }
+
+  &__compare {
+    text-align: right;
+    padding: 0 1rem 0.6rem 0;
+  }
+}
+
+// for chart
+
+.chartToolTip {
+  background-color: $dark-brown;
+  width: 75px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  pointer-events: none;
+
+  position: absolute;
+  transform: translate(-50%, -120%);
+  transition: all 0.2s;
+
+  @media only screen and (max-width: 32em) {
+    width: 50px;
+    height: 27px;
+  }
+
+  &__text {
+    color: $very-pale-orange;
+    font-weight: 800;
+    font-size: 1.8rem;
+    padding-right: 1.5px;
+    letter-spacing: 0.2px;
+    @media only screen and (max-width: 32em) {
+      font-size: 1.3rem;
+    }
+  }
+}
