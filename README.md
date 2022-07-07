@@ -14,6 +14,7 @@ For simplicity, here are links to the work on the levels that are listed on the 
 ### Junior
 
 - [Time tracking dashboard](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/time-tracking-dashboard/src) - [Live Site](https://dashboard-frontendmentor-faleev.netlify.app/)
+- [Expense chart component](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/expense-chart-component) - [Live Site](https://expense-chart-fm-faleev.netlify.app/)
 - [Advice Generator App](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/advice-generator-app-main/src) - [Live Site](https://advice-frontendmentor-faleev.netlify.app/)
 - [Tip Calculator App](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/tip-calculator-app/src) - [Live Site](https://tip-calc-app-fm-faleev.netlify.app/)
 - [Testimonial grid section](https://github.com/BeemoCode/solutionForFrontendMentor/tree/main/testimonial-grid-section/src) - [Live Site](https://testimonials-grid-fm-faleev.netlify.app/)
