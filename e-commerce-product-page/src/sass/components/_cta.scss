@@ -1,0 +1,17 @@
+.cta {
+  flex: 0 1 45.5rem;
+  @media screen and (max-width: 61.25em) {
+    flex: 0 1 auto;
+  }
+  &__about {
+    padding: 6.1rem 1rem 0 0;
+    margin-bottom: 3.6rem;
+
+    @media screen and (max-width: 61.25em) {
+      padding: 0;
+    }
+    @media screen and (max-width: 35em) {
+      margin-bottom: 2rem;
+    }
+  }
+}
